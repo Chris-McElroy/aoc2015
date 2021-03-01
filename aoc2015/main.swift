@@ -9,4 +9,5 @@ import Foundation
 
 let projectFolder = "build/code/aoc2015"
 
+day01()
 

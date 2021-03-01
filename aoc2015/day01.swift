@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+func day01() {
+    print("hi")
+}
