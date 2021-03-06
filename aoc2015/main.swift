@@ -7,7 +7,9 @@
 
 import Foundation
 
-let projectFolder = "build/code/aoc2015"
+let projectFolder = "OneDrive/code/aoc2015"
 
 day01()
-
+day02()
+day03()
+day04()

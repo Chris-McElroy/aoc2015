@@ -8,5 +8,17 @@
 import Foundation
 
 func day01() {
-    print("hi")
+    let input = inputLines(1)
+    
+    var a1 = 0, a2 = 0
+    
+    for (i,c) in input[0].enumerated() {
+        a1 += c == "(" ? 1 : -1
+        
+        if a1 == -1 && a2 == 0 {
+            a2 = i+1
+        }
+    }
+    
+    print(a1,a2)
 }

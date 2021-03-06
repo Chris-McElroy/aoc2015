@@ -12,7 +12,8 @@ import Foundation
 public func inputLines(_ num: Int) -> [String] {
     do {
         let home = FileManager.default.homeDirectoryForCurrentUser
-        let filePath = projectFolder + "/aoc2015/input/input\(num)"
+        let name = "input" + (num < 10 ? "0" : "") + "\(num)"
+        let filePath = projectFolder + "/aoc2015/input/" + name
         let file = URL(fileURLWithPath: filePath, relativeTo: home)
         return try String(contentsOf: file).fullSplit(separator: "\n")
     } catch {
