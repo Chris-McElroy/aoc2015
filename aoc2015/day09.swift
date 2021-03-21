@@ -8,7 +8,52 @@
 import Foundation
 
 func day09() {
-    let input = inputLines(9)
+    // permutations from https://stackoverflow.com/questions/34968470/calculate-all-permutations-of-a-string-in-swift
+    func permutations(len n: Int, _ a: inout [Substring], output: inout [[Substring]]) {
+        if n == 1 { output.append(a); return }
+        for i in 0..<n-1 {
+            permutations(len: n-1, &a, output: &output)
+            a.swapAt(n-1, (n%2 == 1) ? 0 : i)
+        }
+        permutations(len: n-1, &a, output: &output)
+    }
     
-    print(input)
+    let input = inputLines(9).map { $0.split(separator: " ") }
+    
+    var names: [Substring] = []
+    var graph: [[Substring]: Int] = [:]
+    
+    for line in input {
+        if !names.contains(line[0]) { names.append(line[0]) }
+        if !names.contains(line[2]) { names.append(line[2]) }
+        
+        graph[[line[0],line[2]]] = Int(line[4])!
+        graph[[line[2],line[0]]] = Int(line[4])!
+    }
+    
+    var paths: [[Substring]] = []
+    permutations(len: names.count, &names, output: &paths)
+
+    var a1 = Int.max
+    var a2 = Int.min
+
+    for path in paths {
+        var dist = 0
+        var valid = true
+        
+        for i in stride(from: 1, to: path.count, by: 1) {
+            guard let d = graph[[path[i], path[i-1]]] else {
+                valid = false
+                break
+            }
+            dist += d
+        }
+
+        if valid {
+            if dist < a1 { a1 = dist }
+            if dist > a2 { a2 = dist }
+        }
+    }
+    
+    print(a1, a2)
 }

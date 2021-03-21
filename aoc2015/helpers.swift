@@ -214,6 +214,21 @@ public extension StringProtocol {
     }
 }
 
+extension RangeReplaceableCollection {
+    // from https://stackoverflow.com/questions/25162500/apple-swift-generate-combinations-with-repetition
+    // I should use rangereplacablecollection for everything i think
+    func combinations(of n: Int) -> [SubSequence] {
+        guard n > 0 else { return [.init()] }
+        guard let first = first else { return [] }
+        return combinations(of: n - 1).map { CollectionOfOne(first) + $0 } + dropFirst().combinations(of: n)
+    }
+    func uniqueCombinations(of n: Int) -> [SubSequence] {
+        guard n > 0 else { return [.init()] }
+        guard let first = first else { return [] }
+        return dropFirst().uniqueCombinations(of: n - 1).map { CollectionOfOne(first) + $0 } + dropFirst().uniqueCombinations(of: n)
+    }
+}
+
 public extension Comparable {
     func isin(_ collection: Array<Self>?) -> Bool {
         return collection?.contains(self) == true
