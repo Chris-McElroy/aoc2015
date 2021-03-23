@@ -11,6 +11,7 @@
 		1E294BEA25F9C64E009897E4 /* day05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E294BE925F9C64E009897E4 /* day05.swift */; };
 		1E294BED25F9EACF009897E4 /* day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E294BEC25F9EACF009897E4 /* day06.swift */; };
 		1E4E49A225EDD90B0015C034 /* day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4E49A125EDD90B0015C034 /* day02.swift */; };
+		1E78E455260991CB00A36564 /* day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E78E454260991CB00A36564 /* day11.swift */; };
 		1E8CD6F72602F227004FF01D /* day08.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CD6F62602F227004FF01D /* day08.swift */; };
 		1E8CD6FA260300AE004FF01D /* day09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CD6F9260300AE004FF01D /* day09.swift */; };
 		1E9DD88225ED7CFB0089ABB5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9DD88125ED7CFB0089ABB5 /* main.swift */; };
@@ -38,6 +39,7 @@
 		1E294BE925F9C64E009897E4 /* day05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day05.swift; sourceTree = "<group>"; };
 		1E294BEC25F9EACF009897E4 /* day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day06.swift; sourceTree = "<group>"; };
 		1E4E49A125EDD90B0015C034 /* day02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day02.swift; sourceTree = "<group>"; };
+		1E78E454260991CB00A36564 /* day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day11.swift; sourceTree = "<group>"; };
 		1E8CD6F62602F227004FF01D /* day08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day08.swift; sourceTree = "<group>"; };
 		1E8CD6F9260300AE004FF01D /* day09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day09.swift; sourceTree = "<group>"; };
 		1E9DD87E25ED7CFB0089ABB5 /* aoc2015 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = aoc2015; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 				1E8CD6F62602F227004FF01D /* day08.swift */,
 				1E8CD6F9260300AE004FF01D /* day09.swift */,
 				1EDD9F5D2607FAAC0065BEC8 /* day10.swift */,
+				1E78E454260991CB00A36564 /* day11.swift */,
 				1E9DD89025ED7D4F0089ABB5 /* input */,
 			);
 			path = aoc2015;
@@ -166,6 +169,7 @@
 				1E9DD88E25ED7D4A0089ABB5 /* day01.swift in Sources */,
 				1E10D86C25FC73A6009B2EEC /* day07.swift in Sources */,
 				1E8CD6FA260300AE004FF01D /* day09.swift in Sources */,
+				1E78E455260991CB00A36564 /* day11.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
