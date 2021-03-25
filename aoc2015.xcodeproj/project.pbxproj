@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E10D86C25FC73A6009B2EEC /* day07.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E10D86B25FC73A6009B2EEC /* day07.swift */; };
+		1E22E0F8260C403E007F627A /* day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E22E0F7260C403E007F627A /* day12.swift */; };
 		1E294BEA25F9C64E009897E4 /* day05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E294BE925F9C64E009897E4 /* day05.swift */; };
 		1E294BED25F9EACF009897E4 /* day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E294BEC25F9EACF009897E4 /* day06.swift */; };
 		1E4E49A225EDD90B0015C034 /* day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4E49A125EDD90B0015C034 /* day02.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1E10D86B25FC73A6009B2EEC /* day07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day07.swift; sourceTree = "<group>"; };
+		1E22E0F7260C403E007F627A /* day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day12.swift; sourceTree = "<group>"; };
 		1E294BE925F9C64E009897E4 /* day05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day05.swift; sourceTree = "<group>"; };
 		1E294BEC25F9EACF009897E4 /* day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day06.swift; sourceTree = "<group>"; };
 		1E4E49A125EDD90B0015C034 /* day02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day02.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				1E8CD6F9260300AE004FF01D /* day09.swift */,
 				1EDD9F5D2607FAAC0065BEC8 /* day10.swift */,
 				1E78E454260991CB00A36564 /* day11.swift */,
+				1E22E0F7260C403E007F627A /* day12.swift */,
 				1E9DD89025ED7D4F0089ABB5 /* input */,
 			);
 			path = aoc2015;
@@ -164,6 +167,7 @@
 				1EF43F8125F32F6700D3A992 /* day04.swift in Sources */,
 				1EDD9F5E2607FAAC0065BEC8 /* day10.swift in Sources */,
 				1EE7AE0625F3066B0045E8B9 /* day03.swift in Sources */,
+				1E22E0F8260C403E007F627A /* day12.swift in Sources */,
 				1E4E49A225EDD90B0015C034 /* day02.swift in Sources */,
 				1E294BEA25F9C64E009897E4 /* day05.swift in Sources */,
 				1E9DD88E25ED7D4A0089ABB5 /* day01.swift in Sources */,
