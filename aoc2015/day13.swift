@@ -8,35 +8,31 @@
 import Foundation
 
 func day13() {
-    let input = inputLines(13)
+    var a1 = 0
+    var a2 = 0
+    let input = inputLines(13).map { $0.split(separator: " ") }
     
     var names: [Substring] = []
     var hDict: [[Substring]: Int] = [:]
     
-    for line in input {
-        let s = line.split(separator: " ")
+    for s in input {
         let n = Int(s[3])!
-        let a = s[0]
-        let b = s[10].dropLast()
-        
-        hDict[[a,b]] = s[2] == "lose" ? -n : n
-        
-        if !a.isin(names) { names.append(a) }
+        hDict[[s[0],s[10].dropLast()]] = s[2] == "lose" ? -n : n
+        if !s[0].isin(names) { names.append(s[0]) }
     }
     
+    let last = names.removeLast() // avoids starting point symmetries
     var paths: [[Substring]] = []
     permutations(len: names.count, &names, output: &paths)
     
-    var a1 = 0
-    var a2 = 0
-    
     for path in paths {
         var s = 0
-        var i = 0
         var min = Int.max
+        let table = path + [last]
         
-        while i < path.count {
-            let conn = hDict[[path[w: i+1]!, path[w: i]!]]! + hDict[[path[w: i]!, path[w: i+1]!]]!
+        var i = 0
+        while i < table.count {
+            let conn = hDict[[table[w: i+1]!, table[w: i]!]]! + hDict[[table[w: i]!, table[w: i+1]!]]!
             s += conn
             if conn < min { min = conn }
             i += 1
@@ -48,5 +44,4 @@ func day13() {
     
     print(a1, a2)
 }
-
 // 709 668
