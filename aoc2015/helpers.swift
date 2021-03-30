@@ -229,6 +229,15 @@ extension RangeReplaceableCollection {
     }
 }
 
+// permutations from https://stackoverflow.com/questions/34968470/calculate-all-permutations-of-a-string-in-swift
+func permutations<T>(len n: Int, _ a: inout [T], output: inout [[T]]) {
+    if n == 1 { output.append(a); return }
+    for i in stride(from: 0, to: n, by: 1) {
+        permutations(len: n-1, &a, output: &output)
+        a.swapAt(n-1, (n%2 == 1) ? 0 : i)
+    }
+}
+
 public extension Comparable {
     func isin(_ collection: Array<Self>?) -> Bool {
         return collection?.contains(self) == true

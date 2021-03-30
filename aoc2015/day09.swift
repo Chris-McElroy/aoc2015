@@ -8,16 +8,6 @@
 import Foundation
 
 func day09() {
-    // permutations from https://stackoverflow.com/questions/34968470/calculate-all-permutations-of-a-string-in-swift
-    func permutations(len n: Int, _ a: inout [Substring], output: inout [[Substring]]) {
-        if n == 1 { output.append(a); return }
-        for i in 0..<n-1 {
-            permutations(len: n-1, &a, output: &output)
-            a.swapAt(n-1, (n%2 == 1) ? 0 : i)
-        }
-        permutations(len: n-1, &a, output: &output)
-    }
-    
     let input = inputLines(9).map { $0.split(separator: " ") }
     
     var names: [Substring] = []
