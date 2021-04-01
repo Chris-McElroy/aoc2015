@@ -8,10 +8,10 @@
 import Foundation
 
 func day09() {
-    let input = inputLines(9).map { $0.split(separator: " ") }
+    let input = inputWords(9)
     
-    var names: [Substring] = []
-    var graph: [[Substring]: Int] = [:]
+    var names: [String] = []
+    var graph: [[String]: Int] = [:]
     
     for line in input {
         if !names.contains(line[0]) { names.append(line[0]) }
@@ -21,7 +21,7 @@ func day09() {
         graph[[line[2],line[0]]] = Int(line[4])!
     }
     
-    var paths: [[Substring]] = []
+    var paths: [[String]] = []
     permutations(len: names.count, &names, output: &paths)
 
     var a1 = Int.max
@@ -47,3 +47,5 @@ func day09() {
     
     print(a1, a2)
 }
+
+// 251 898

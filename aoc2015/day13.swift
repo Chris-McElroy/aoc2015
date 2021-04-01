@@ -10,19 +10,19 @@ import Foundation
 func day13() {
     var a1 = 0
     var a2 = 0
-    let input = inputLines(13).map { $0.split(separator: " ") }
+    let input = inputWords(13)
     
-    var names: [Substring] = []
-    var hDict: [[Substring]: Int] = [:]
+    var names: [String] = []
+    var hDict: [[String]: Int] = [:]
     
     for s in input {
         let n = Int(s[3])!
-        hDict[[s[0],s[10].dropLast()]] = s[2] == "lose" ? -n : n
+        hDict[[s[0],String(s[10].dropLast())]] = s[2] == "lose" ? -n : n
         if !s[0].isin(names) { names.append(s[0]) }
     }
     
     let last = names.removeLast() // avoids starting point symmetries
-    var paths: [[Substring]] = []
+    var paths: [[String]] = []
     permutations(len: names.count, &names, output: &paths)
     
     for path in paths {
