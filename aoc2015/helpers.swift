@@ -114,6 +114,11 @@ public extension Array {
         return self[index(startIndex, offsetBy: i % count)]
     }
     
+    subscript(s i: Int) -> Iterator.Element? {
+        if i < 0 || i >= count { return nil }
+        return self[i]
+    }
+    
     func first(_ k: Int) -> Self.SubSequence {
         return self.dropLast(count-k)
     }
@@ -172,6 +177,11 @@ public extension String {
     
     subscript(w i: Int) -> Character? {
         return self[index(startIndex, offsetBy: i % count)]
+    }
+    
+    subscript(s i: Int) -> Character? {
+        if i < 0 || i >= count { return nil }
+        return self[i]
     }
     
     func slice(from start: Int, to end: Int, by k: Int) -> Self {
