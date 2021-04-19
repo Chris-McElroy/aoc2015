@@ -29,4 +29,5 @@ let projectFolder = "OneDrive/code/aoc2015"
 //day18()
 //day19()
 //day20()
-day21()
+//day21()
+day22()
