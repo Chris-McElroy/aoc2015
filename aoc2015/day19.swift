@@ -52,6 +52,6 @@ func day19() {
     
     let a1 = ways.count
     let a2 = path.count-1
-    print(a1, a2)
+    print("19:", a1, a2)
 }
 // 509 195

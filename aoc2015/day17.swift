@@ -26,6 +26,6 @@ func day17() {
     let a1 = countList.count
     let a2 = countList.repeats(of: countList.min()!)
     
-    print(a1, a2)
+    print("17:", a1, a2)
 }
 // 1638 17

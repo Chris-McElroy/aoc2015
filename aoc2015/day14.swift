@@ -34,7 +34,7 @@ func day14() {
     
     let a1 = distances.max()!
     let a2 = points.max()!
-    print(a1, a2)
+    print("14:", a1, a2)
 }
 
 // 2660 1256

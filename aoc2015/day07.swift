@@ -92,5 +92,5 @@ func day07() {
     instr["b"] = ["\(a1)","->"]
     let a2 = solve(instr, for: "a")
     
-    print(a1, a2)
+    print("07:", a1, a2)
 }

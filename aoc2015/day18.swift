@@ -51,6 +51,6 @@ func day18() {
     let a1 = curr1.reduce(0) { x,y in x + y.repeats(of: 1)}
     let a2 = curr2.reduce(0) { x,y in x + y.repeats(of: 1)}
     
-    print(a1, a2)
+    print("18:", a1, a2)
 }
 // 768 781

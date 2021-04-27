@@ -20,5 +20,5 @@ func day01() {
         }
     }
     
-    print(a1,a2)
+    print("01:", a1,a2)
 }

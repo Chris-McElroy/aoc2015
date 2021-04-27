@@ -25,5 +25,5 @@ func day05() {
         a2 += (t4 && t5).int
     }
     
-    print(a1, a2)
+    print("05:", a1, a2)
 }

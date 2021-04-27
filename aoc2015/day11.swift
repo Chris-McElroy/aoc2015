@@ -85,5 +85,5 @@ func day11() {
     }
     let a2 = input
     
-    print(a1, a2)
+    print("11:", a1, a2)
 }

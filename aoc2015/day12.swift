@@ -39,6 +39,6 @@ func day12() {
     let a1 = getSum(data)
     let a2 = getRedSum(data)
     
-    print(a1, a2)
+    print("12:", a1, a2)
 }
 // 111754 65402

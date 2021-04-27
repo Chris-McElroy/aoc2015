@@ -24,5 +24,5 @@ func day03() {
     let a1 = Set(l1).count
     let a2 = Set(l2).count
     
-    print(a1,a2)
+    print("03:", a1,a2)
 }

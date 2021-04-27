@@ -35,6 +35,6 @@ func day04() {
         a2 += 1
     }
 
-    print(a1, a2)
+    print("04:", a1, a2)
 }
         

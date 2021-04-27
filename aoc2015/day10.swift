@@ -35,5 +35,5 @@ func day10() {
     for _ in 0..<10 { say() }
     let a2 = input.count
     
-    print(a1, a2)
+    print("10:", a1, a2)
 }

@@ -36,5 +36,5 @@ func day08() {
         a2 += line.repeats(of: "\\")
     }
     
-    print(a1,a2)
+    print("08:", a1,a2)
 }

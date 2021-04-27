@@ -19,5 +19,5 @@ func day02() {
         a2 += 2*d.sorted()[0, 2].sum() + d.product()
     }
     
-    print(a1,a2)
+    print("02:", a1,a2)
 }

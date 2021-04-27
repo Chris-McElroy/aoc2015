@@ -61,6 +61,6 @@ func day23() {
     
     let a2 = b
     
-    print(a1, a2)
+    print("23:", a1, a2)
 }
 // 307 160

@@ -42,6 +42,6 @@ func day13() {
         if s - min > a2 { a2 = s - min }
     }
     
-    print(a1, a2)
+    print("13:", a1, a2)
 }
 // 709 668

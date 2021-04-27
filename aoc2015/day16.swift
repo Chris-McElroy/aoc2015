@@ -32,7 +32,7 @@ func day16() {
         if valid2 { a2 = sue.ID }
     }
     
-    print(a1, a2)
+    print("16:", a1, a2)
     
     struct Sue {
         let ID: Int

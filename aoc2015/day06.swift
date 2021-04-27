@@ -60,5 +60,5 @@ func day06() {
     let a1 = l1.reduce(0, { s, l in s + l.int })
     let a2 = l2.sum()
     
-    print(a1, a2)
+    print("06:", a1, a2)
 }
